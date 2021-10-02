@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title><%= title %></title>
+</head>
+<body>
+    <section class="container">
+      <div class="content">
+
+        <div class="progress">
+          <h1>Barra de progresso com ajax</h1>
+          <button id="btnSend">Enviar arquivo</button>
+          <input type="file" id="files" multiple style="display: none">
+          <span>Os arquivos vão para a pasta upload do projeto.</span>
+        </div>
+
+        <div id="snackBar">
+          
+          <div class="snack">
+              
+            <div class="timePorcent">
+              <img src="images/loading-buffering.gif" alt="carregando">
+              <p class="timeleft"></p>
+            </div>
+    
+            <div class="informations">
+              <p class="name"></p>
+              <p class="hourTime"></p>
+            </div>
+    
+            <div class="snackProgress">
+              <div class="progressW"></div>
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+    </section>
+   
+<script src="src/controller/ProgressBar.js"></script>
+<script src="src/index.js"></script>
+</body>
+</html>
